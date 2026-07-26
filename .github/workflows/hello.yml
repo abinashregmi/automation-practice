@@ -1,0 +1,17 @@
+name: Hello World Workflow
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, world! Your automation is working perfectly."
+
+      - name: Run Automatic Health Check
+        run: |
+          echo "Starting  automatic health check..."
+           echo "System Status: Healthy"
+           echo "End of health check."
+        
